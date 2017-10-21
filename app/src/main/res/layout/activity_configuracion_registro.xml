@@ -1,0 +1,236 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+
+
+        <Button
+            android:id="@+id/btnRegresarConfiguracion"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#eaeaea"
+            android:textStyle="bold"
+            android:gravity="left|center_vertical"
+            android:text="  &lt;   Regresar"
+            android:textColor="#1f2229"
+            android:textSize="16dp"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/txtTituloRegistro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="FORMULARIO DE REGISTRO"
+                    android:textSize="16dp" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="15dp" >
+
+                <TextView
+                    android:id="@+id/txtSubTituloRegistro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="5dp"
+
+                    android:text="Toda la información que se solicita e ingresa es confidencial y será utilizada exclusivamente con el propósito para la cual fue requerida. Los datos proporcionados deben ser verídicos, a fin de brindar una asistencia oportuna."
+                    android:textSize="12dp" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+                <Spinner
+                    android:id="@+id/spinTipoDocumento"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.28"
+                    android:layout_height="wrap_content"
+                    android:hint="Tipo Doc."/>
+
+                <EditText
+                    android:id="@+id/editNumeroCedula"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_column="0"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.35"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="# Documento"
+                    android:inputType="textCapWords"
+                    android:text=""
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/editTelefono"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_column="0"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="0.35"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="# Celular"
+                    android:inputType="phone"
+                    android:text=""
+                    android:textSize="16dp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/editPrimerNombre"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Primer Nombre"
+                    android:inputType="textCapWords"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/editSegundoNombre"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Segundo Nombre"
+                    android:inputType="textCapWords"
+                    android:text=""
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/editPrimerApellido"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Primer Apellido"
+                    android:inputType="textCapWords"
+                    android:text=""
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/editSegundoApellido"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Segundo Apellido"
+                    android:inputType="textCapWords"
+                    android:text=""
+                    android:textSize="16dp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:layout_column="0"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Correo Electrónico"
+                    android:inputType="textEmailAddress"
+                    android:text=""
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/editCiudad"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_column="0"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Ciudad"
+                    android:inputType="textCapWords"
+                    android:text=""
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/editSector"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_column="0"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Sector"
+                    android:inputType="textCapWords"
+                    android:text=""
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+                <Button
+                    android:id="@+id/btnGuardarDatos"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_column="0"
+                    android:background="@drawable/button_compartir"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_marginRight="6dp"
+                    android:text="GUARDAR DATOS"
+                    android:textSize="16dp" />
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+</LinearLayout>

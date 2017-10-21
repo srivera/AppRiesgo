@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp">
+
+        <LinearLayout
+            android:id="@+id/layoutVertical1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight=".15"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/txtDiaBoletin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:textColor="#FF7053"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/txtMesBoletin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEP"
+                android:textColor="#FF7053"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtAnioBoletin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015"
+                android:textColor="#FF7053"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutVertical2"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight=".85"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+
+            <TextView
+                android:id="@+id/txtHoraBoletin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:25"
+                android:textColor="#626262"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txtTituloBoletin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TITULO BOLETIN"
+                android:textColor="#FF7053"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtLeyendaBoletin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="leyenda"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnVerBoletin"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="0.13"
+            android:background="#CCCCCC"
+            android:text=">"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

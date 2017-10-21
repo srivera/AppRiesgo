@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/layoutHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layoutVertical1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/txtDiaNotificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:textColor="#FF7053"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/txtMesNotificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEP"
+                android:textColor="#FF7053"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtAnioNotificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015"
+                android:textColor="#FF7053"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutVertical2"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight=".85"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/layoutVertical5"
+                android:layout_width="284dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtHoraNotificacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:25"
+                    android:textColor="#626262"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtTituloNotificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALERTA COTOPAXI"
+                android:textColor="#FF7053"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtLeyendaNotificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="leyenda"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

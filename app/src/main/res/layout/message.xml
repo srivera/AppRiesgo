@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/swipelist_frontview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:tag="front">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TableRow   android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textoRuta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.80"
+                    android:paddingLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|center_vertical"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textoDistancia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.20"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="5dp"
+                    android:textSize="14dp" />
+            </TableRow>
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+

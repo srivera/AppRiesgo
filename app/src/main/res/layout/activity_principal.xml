@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.app.FragmentTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@android:id/tabhost"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/imagenAlerta"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.20"
+                    android:padding="5dp"
+                    android:src="@drawable/alerta" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.67"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tituloAlerta"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text=""
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/subtituloAlerta"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:gravity="top"
+                        android:paddingLeft="10dp"
+                        android:text=""
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnTipoAlerta"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_alignBottom="@+id/leyendaOpcionInicio"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="0.13"
+                    android:background="#beaf04"
+                    android:text=">"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginBottom="-4dp"/>
+
+</LinearLayout>
+
+</android.support.v4.app.FragmentTabHost>

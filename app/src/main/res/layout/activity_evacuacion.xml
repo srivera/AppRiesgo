@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/btnRegresarEvacuacion"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#eaeaea"
+        android:textStyle="bold"
+        android:gravity="left|center_vertical"
+        android:text="  &lt;   Regresar"
+        android:textColor="#1f2229"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+
+    <RelativeLayout  android:id="@+id/layoutMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.64">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            map:uiZoomControls="false" />
+
+
+        <ImageButton
+            android:id="@+id/abrirChat"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tipoMapa"
+            android:background="@drawable/mapa"
+            android:layout_below="@+id/ayuda"
+            android:layout_margin="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/navegar"
+            android:background="@drawable/brujulaverde"
+            android:layout_below="@+id/tipoMapa"
+            android:layout_margin="3dp"
+            android:layout_alignLeft="@+id/tipoMapa"
+            android:layout_alignStart="@+id/tipoMapa" />
+
+
+        <ImageButton
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:id="@+id/ayuda"
+            android:layout_margin="3dp"
+            android:background="@drawable/pregunta"
+            android:layout_alignTop="@+id/abrirChat"
+            android:layout_alignRight="@+id/navegar"
+            android:layout_alignEnd="@+id/navegar" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.06"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/verRutaUno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:background="@drawable/button_gris"
+            android:text="Ruta 1"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/verRutaDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:background="@drawable/button_gris"
+            android:text="Ruta 2"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/verRutaTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:background="@drawable/button_gris"
+            android:text="Ruta 3"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.30"
+        android:descendantFocusability="blocksDescendants"
+        android:listSelector="#00000000" />
+
+
+</LinearLayout>

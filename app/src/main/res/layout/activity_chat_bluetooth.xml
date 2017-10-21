@@ -1,0 +1,229 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnRegresarChat"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#eaeaea"
+            android:textStyle="bold"
+            android:gravity="left|center_vertical"
+            android:text="  &lt;   Regresar"
+            android:textColor="#1f2229"
+            android:textSize="16dp" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayou6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.20"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="0.20"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/chat" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="15dp"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tituloChatEmergencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:text="CHAT DE EMERGENCIA"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtSubTituloRegistro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Hasta 5 personas que cuenten con este sistema, recibirán tus mensajes. Regístralos con el # cédula/pasaporte"
+                    android:textSize="8dp" />
+
+                <TextView
+                    style="?android:listSeparatorTextViewStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnContactos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="CONTACTOS"
+                        android:textColor="#1f2229"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:scaleType="fitXY"
+                        android:src="?android:attr/listDivider" />
+
+                    <Button
+                        android:id="@+id/btnChat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="CHAT"
+                        android:textColor="#1f2229"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutMensajes"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.80"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:padding="2dip"
+                android:scrollbars="vertical"
+                android:shrinkColumns="1"
+                android:stretchColumns="*">
+
+                <TableRow android:layout_width="fill_parent">
+
+                    <EditText
+                        android:id="@+id/editMensajeOffLine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:textSize="14dp"
+                        android:hint="Escriba su mensaje"></EditText>
+
+                    <Button
+                        android:id="@+id/btnEnviarChatSolidario"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/button_compartir"
+                        android:text="Enviar"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+            </TableLayout>
+
+
+            <ListView
+                android:id="@+id/mensajesSolidarios"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutContacto"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.80"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:padding="5dip"
+                android:scrollbars="vertical"
+                android:shrinkColumns="1"
+                android:stretchColumns="*">
+
+                <TableRow android:layout_width="fill_parent">
+
+                    <EditText
+                        android:id="@+id/editCedulaContacto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_weight="0.8"
+                        android:hint="# Cëdula o Pasaporte"></EditText>
+
+                    <Button
+                        android:id="@+id/btnBuscarContacto"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/button_compartir"
+                        android:text="Buscar"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+                </TableRow>
+            </TableLayout>
+
+
+            <ListView
+                android:id="@+id/contactosConfianza"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:listSelector="#00000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/button1"
+            android:layout_weight="0.01"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tituloSitioSeguro"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="#D8D8D8"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Celulares" />
+
+            <ListView
+                android:id="@+id/new_devices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

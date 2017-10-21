@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp">
+
+            <TableRow android:background="#DADADA">
+
+                <ImageView
+                    android:id="@+id/imagenConsejo"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.20"
+                    android:background="#DADADA"
+                    android:paddingBottom="11dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="12dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.67"
+                    android:background="#DADADA"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nombreConsejo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical|left"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="10dp"
+                        android:text="."
+                        android:textColor="#545556"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnVerConsejo"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.13"
+                    android:background="#CCCCCC"
+                    android:text=">"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+            </TableRow>
+
+        </TableLayout>
+
+</FrameLayout>

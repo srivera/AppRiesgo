@@ -1,0 +1,202 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnRegresarRegistroEcu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#eaeaea"
+        android:textStyle="bold"
+        android:gravity="left|center_vertical"
+        android:text="  &lt;   Regresar"
+        android:textColor="#1f2229"
+        android:visibility="gone"
+        android:textSize="16dp"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:padding="10dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/txtTituloRegistro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="CONTACTO DE EMERGENCIA"
+                    android:layout_span="3"
+                    android:textSize="16dp" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/txtSubTituloRegistro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_span="3"
+                    android:text="Ingrese los datos de su contacto de emergencia"
+                    android:textSize="14dp" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.20"
+                    android:layout_column="0"
+                    android:text="Nombre" />
+
+                <EditText
+                    android:id="@+id/editNombreContacto"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.80"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Nombre del Contacto"
+                    android:inputType="textCapWords"
+                    android:textSize="16dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.20"
+                    android:text="Apellido" />
+
+                <EditText
+                    android:id="@+id/editApellidoContacto"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Primer Apellido"
+                    android:layout_weight="0.80"
+                    android:inputType="textCapWords"
+                    android:text=""
+                    android:textSize="16dp" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.20"
+                    android:text="Celular" />
+
+                <EditText
+                    android:id="@+id/editCodigoPaisContacto"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Cód. País"
+                    android:layout_weight="0.20"
+                    android:inputType="phone"
+                    android:text=""
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/editTelefonoContacto"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="0.60"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="# Celular"
+                    android:inputType="phone"
+                    android:text=""
+                    android:textSize="16dp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.20"
+                    android:text="Relación" />
+
+                <EditText
+                    android:id="@+id/editRelacionContacto"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Relación con su contacto"
+                    android:layout_weight="0.80"
+                    android:inputType="textCapWords"
+                    android:text=""
+                    android:textSize="16dp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+                <Button
+                    android:id="@+id/btnGuardarDatos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/button_compartir"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="GUARDAR DATOS"
+                    android:layout_span="3"
+                    android:textSize="16dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+</LinearLayout>

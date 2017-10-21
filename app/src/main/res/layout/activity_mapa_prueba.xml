@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity" >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="  &lt;   Regresar"
+        android:id="@+id/btnRegresarMapa"
+        android:textSize="16dp"
+        android:textColor="#1f2229"
+        android:background="#eaeaea"
+        android:gravity="left|center_vertical"/>
+
+    <fragment android:layout_width="match_parent"
+        android:layout_height="match_parent" android:id="@+id/map" tools:context=".UbicacionActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/btnRegresarMapa" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="&#xf183;"
+        android:id="@+id/verRutaCaminando"
+        android:background="@drawable/button_compartir"
+        android:textSize="12dp"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_alignTop="@+id/map"
+        android:layout_alignRight="@+id/tipoMapa"
+        android:layout_alignEnd="@+id/tipoMapa" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="&#xf1b9;"
+        android:id="@+id/verRutaAuto"
+        android:background="@drawable/button_compartir"
+        android:textSize="12dp"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Tipo Mapa"
+        android:id="@+id/tipoMapa"
+        android:background="@drawable/button_compartir"
+        android:textSize="12dp"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/verRutaCaminando"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

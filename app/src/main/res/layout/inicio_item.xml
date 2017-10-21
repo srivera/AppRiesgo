@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/swipelist_frontview"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:tag="front">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow android:background="#DADADA">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="0.20"
+                    android:id="@+id/imagenOpcionInicio"
+                    android:background="#DADADA"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="11dp"
+                    android:layout_gravity="center_horizontal|center_vertical" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.67"
+                    android:orientation="vertical"
+                    android:background="#DADADA">
+
+                    <TextView
+                        android:id="@+id/nombreOpcionInicio"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:gravity="center_vertical|bottom"
+                        android:text="."
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/leyendaOpcionInicio"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="top|center_vertical"
+                        android:gravity="top"
+                        android:text="."
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnItemInicio"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="0.13"
+                    android:text=">"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

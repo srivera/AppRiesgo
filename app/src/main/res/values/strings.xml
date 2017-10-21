@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ecuador Seguro</string>
+    <string name="title_activity_ubicacion">Mi Ubicación</string>
+    <string name="gcm_defaultSenderId">351165577258</string>
+    <string name="title_activity_principal">ECUADOR SEGURO</string>
+    <string name="title_activity_registro">Ecuador Seguro</string>
+    <string name="title_activity_menu">Menú</string>
+    <string name="title_activity_texto">Indicaciones</string>
+
+    <string name="app_id_facebook">76cbfc2c40ab2ef7fc309697d7049ffb</string>
+</resources>

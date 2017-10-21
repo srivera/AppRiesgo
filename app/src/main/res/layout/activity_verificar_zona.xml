@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnRegresarVerificarZona"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#eaeaea"
+        android:gravity="left|center_vertical"
+        android:textStyle="bold"
+        android:text="  &lt;   Regresar"
+        android:textColor="#1f2229"
+        android:textSize="16dp" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"></ListView>
+        </LinearLayout>
+ </LinearLayout>

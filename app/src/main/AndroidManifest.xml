@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="activities.riesgo.yacare.com.ec.appriesgo">
+
+    <uses-sdk
+        android:minSdkVersion="14" />
+
+      <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- [START gcm_permission] -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- [END gcm_permission] -->
+
+    <permission android:name="activities.riesgo.yacare.com.ec.appriesgo.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="activities.riesgo.yacare.com.ec.appriesgo.permission.C2D_MESSAGE"/>
+
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <permission
+        android:name="activities.riesgo.yacare.com.ec.appriesgo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"></permission>
+    <uses-permission
+        android:name="activities.riesgo.yacare.com.ec.appriesgo.permission.MAPS_RECEIVE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icono"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light"
+        android:name=".app.DatosAplicacion"
+        android:largeHeap="true"
+        android:screenOrientation="portrait">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCR8AxoBaK8ry7AIS4eSXyxAOrfyKdd7nQ" />
+
+        <activity
+            android:name=".mapas.UbicacionActivity"
+            android:label="@string/title_activity_ubicacion"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".general.SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/splashScreenTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".general.RegistroActivity"
+            android:icon="@drawable/icono"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+
+            android:noHistory="true"
+            android:label="@string/title_activity_registro" >
+        </activity>
+
+        <activity
+            android:name=".general.RegistroEcuActivity"
+            android:icon="@drawable/icono"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+
+            android:noHistory="true"
+            android:label="@string/title_activity_registro" >
+        </activity>
+
+        <activity
+            android:name=".general.RegistroSaludEcuActivity"
+            android:icon="@drawable/icono"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+
+            android:noHistory="true"
+            android:label="@string/title_activity_registro" >
+        </activity>
+
+        <activity
+            android:name=".general.RegistroContactoEcuActivity"
+            android:icon="@drawable/icono"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+
+            android:noHistory="true"
+            android:label="@string/title_activity_registro" >
+        </activity>
+
+        <activity
+            android:name=".general.PoliticaPrivacidadActivity"
+            android:icon="@drawable/icono"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+            android:label="@string/title_activity_registro" >
+        </activity>tivity>
+
+
+        <activity
+            android:name=".general.ConfirmarRegistroActivity"
+            android:icon="@drawable/ic_launcher"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+            android:label="@string/title_activity_registro" >
+        </activity>
+        <activity
+            android:name=".mapas.TextoActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_texto" >
+        </activity>
+        <activity
+            android:name=".general.PrincipalActivity"
+            android:icon="@drawable/volcan"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_principal" >
+        </activity>
+
+        <activity
+            android:name=".general.MenuActivity"
+            android:icon="@drawable/icono"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".inicio.MapaActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_ubicacion"
+            >
+        </activity>
+
+        <receiver android:name="com.microsoft.windowsazure.notifications.NotificationsBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="activities.riesgo.yacare.com.ec.appriesgo" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <!-- [START gcm_receiver] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="activities.riesgo.yacare.com.ec.appriesgo" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+        <!-- [START gcm_listener] -->
+        <service
+            android:name=".gcm.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name=".gcm.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+        <service
+            android:name=".gcm.RegistrationIntentService"
+            android:exported="false">
+        </service>
+
+        <service
+            android:name=".verificacion.LocationService"
+            android:exported="false">
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btnRegresarRecomendacion"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#eaeaea"
+        android:textStyle="bold"
+        android:gravity="left|center_vertical"
+        android:text="  &lt;   Regresar"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/titulomochila"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#8e8e8e"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="MOCHILA DE EMERGENCIA"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp" />
+
+
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ededed"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,268 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tituloSimulacro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical|left"
+            android:text="Simulacro de Evacuación"
+            android:textColor="#FF7053"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/leyendaSimulacro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical|left"
+            android:text="Antes de iniciar este simulacro se debe completar los siguientes pasos"
+            android:textColor="#343637"
+            android:textSize="18dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="30dp">
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pasoUnoLeyenda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical|left"
+                        android:text="Paso 1"
+                        android:textColor="#FF7053"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/pasoUnoLeyenda2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical|left"
+                        android:text="Prepara tu mochila"
+                        android:textColor="#343637"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.25"
+                    android:background="#FFFFFF"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBoxUno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/btnAyudaPasoUno"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:src="@drawable/mochilap"/>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pasoDosLeyenda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical|left"
+                        android:text="Paso 2"
+                        android:textColor="#FF7053"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/pasoDosLeyenda2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical|left"
+                        android:text="Localiza la ruta de evacuación"
+                        android:textColor="#343637"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.25"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBoxDos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/btnAyudaPasoDos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:src="@drawable/gpsp"/>
+                </LinearLayout>
+
+
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TableRow
+                android:gravity="center_horizontal|center_vertical">
+
+                <Button
+                    android:id="@+id/iniciarSimulacro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/button_gris"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:text="Iniciar el simulacro"
+                    android:enabled="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp" android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/leyendaTiempo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.55"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|right"
+                    android:text="Tiempo transcurrido en este simulacro:"
+                    android:textColor="#343637"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tiempoTranscurrido"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="0.25"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|right"
+                    android:text="00:00"
+                    android:textColor="#FF7053"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/horas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.20"
+                    android:background="#FFFFFF"
+                    android:gravity="bottom|left"
+                    android:text="HH:MM"
+                    android:textColor="#FF7053"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:layout_marginBottom="100dp">
+
+                <TextView
+                    android:id="@+id/leyendaDistancia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.55"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|right"
+                    android:text="Distancia lineal aprox. en este simulacro:"
+                    android:textColor="#343637"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/distanciaAprox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|right"
+                    android:text="0"
+                    android:textColor="#FF7053"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/distancia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.20"
+                    android:background="#FFFFFF"
+                    android:gravity="bottom|left"
+                    android:text="MTS"
+                    android:textColor="#FF7053"
+                    android:textSize="12dp" />
+
+            </TableRow>
+            <TableRow android:layout_height="100dp">
+                </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

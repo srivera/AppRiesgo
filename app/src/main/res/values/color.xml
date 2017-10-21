@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    
+    <color name="text_title">#444444</color>
+    <color name="text_description">#7e7e7e</color>
+    <color name="background_list_back">#e3e3e3</color>
+    <color name="background_list_front">#ffffff</color>
+    
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_bg_green">#D0F5A9</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>    
+    <color name="black">#000000</color>  
+    
+    <color name="default_screen_bg">#20324a</color>
+    <color name="rounded_container_bg">#80000000</color>
+    <color name="rounded_container_border">#80000000</color>
+    <color name="light_gray_header_color">#646663</color>
+
+    <color name="alerta_amarilla">#646663</color>
+    <color name="alerta_amarilla_oscuro">#646663</color>
+    <color name="alerta_naranja">#646663</color>
+    <color name="alerta_naranja_oscuro">#646663</color>
+    <color name="alerta_roja">#646663</color>
+    <color name="alerta_roja_oscuro">#646663</color>
+</resources>

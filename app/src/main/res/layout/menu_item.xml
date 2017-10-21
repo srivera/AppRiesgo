@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/swipelist_frontview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:tag="front">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TableRow >
+
+
+                <TextView
+                    android:id="@+id/nombreOpcion"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@+id/imagenMenu"
+                    android:layout_toRightOf="@+id/imagenMenu"
+                    android:gravity="center_vertical|left"
+                    android:text="Inicio"
+                    android:textColor="#5A5A5A"
+                    android:textSize="18dp" />
+            </TableRow>
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

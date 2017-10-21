@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/swipelist_frontview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:tag="front">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow android:background="#DADADA">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.20"
+                    android:id="@+id/imagenTipoAlerta"
+                    android:background="#DADADA"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="11dp"
+                    android:layout_gravity="center_horizontal|center_vertical" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.67"
+                    android:orientation="vertical"
+                    android:background="#DADADA">
+
+                    <TextView
+                        android:id="@+id/nombreLeyendaTipoAlerta"
+                        android:layout_width="fill_parent"
+                        android:layout_height="95dp"
+                        android:layout_gravity="center_vertical|left"
+                        android:gravity="center_vertical|left"
+                        android:text="."
+                        android:paddingLeft="12dp"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnVerTipoALerta"
+                    android:layout_width="0dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="0.13"
+                    android:text=">"
+                    android:textColor="#FFFFFF"
+                    android:background="#CCCCCC"
+                    android:textSize="30dp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
